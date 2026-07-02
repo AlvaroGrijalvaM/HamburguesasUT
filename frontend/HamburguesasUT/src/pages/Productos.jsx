@@ -20,7 +20,6 @@ function Productos() {
   const [orden, setOrden] = useState("");
   const [imagenActiva, setImagenActiva] = useState(null);
 
-
   useEffect(() => {
     const cargarProductos = async () => {
       try {

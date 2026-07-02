@@ -17,16 +17,56 @@ const cartSchema = new schema({
     },
     products: [
         {
-            productId: {
+            id: {
+                type: Number,
+                required: true
+            },
+            name: {
                 type: String,
+                required: true
+            },
+            price: {
+                type: Number,
                 required: true
             },
             quantity: {
                 type: Number,
                 required: true
+            },
+            total: {
+                type: Number,
+                required: true
+            },
+            discountPercentage: {
+                type: Number,
+                default: 0
+            },
+            discountedTotal: {
+                type: Number,
+                required: true
+            },
+            thumbnail: {
+                type: String,
+                default: ""
             }
         }
-    ]
+    ],
+    total: {
+        type: Number,
+        required: true
+    },
+    discountedTotal: {
+        type: Number,
+        required: true
+    },
+    totalProducts: {
+        type: Number,
+        required: true
+    },
+    totalQuantity: {
+        type: Number,
+        required: true
+    }
 });
 
 export default mongoose.model("cart", cartSchema);

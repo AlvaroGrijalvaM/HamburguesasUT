@@ -41,7 +41,13 @@ function Carrito() {
 
     const products = items.map((item) => ({
       productId: item.id,
-      quantity: item.quantity
+      name: item.name,
+      price: item.price,
+      quantity: item.quantity,
+      total: item.price * item.quantity,
+      discountPercentage: 0,
+      discountedTotal: item.price * item.quantity,
+      thumbnail: item.image
     }));
 
     try {
@@ -283,7 +289,7 @@ function Carrito() {
                     <div className="ticket-productos">
                       {ticket.products.map((p, i) => (
                         <div key={i} className="ticket-producto-row">
-                          <span>{ticketProductNames[p.productId] || `Producto #${p.productId}`}</span>
+                          <span>{p.name || ticketProductNames[p.id] || `Producto #${p.id}`}</span>
                           <span>x{p.quantity}</span>
                         </div>
                       ))}

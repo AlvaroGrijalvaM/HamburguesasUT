@@ -95,14 +95,39 @@ export async function checkout(req, res) {
         // PASO 4: Enviar pedido (crear documento)
         // =========================
         const nextId = await getNextCartId();
+        
+        // Calcular totales del carrito
+        let cartTotal = 0;
+        let cartDiscountedTotal = 0;
+        let cartTotalQuantity = 0;
+        
+        const productsData = products.map(p => {
+            const productTotal = p.price * p.quantity;
+            const productDiscountedTotal = p.discountedTotal !== undefined ? p.discountedTotal : productTotal;
+            cartTotal += productTotal;
+            cartDiscountedTotal += productDiscountedTotal;
+            cartTotalQuantity += p.quantity;
+            return {
+                id: p.productId,
+                name: p.name,
+                price: p.price,
+                quantity: p.quantity,
+                total: productTotal,
+                discountPercentage: p.discountPercentage || 0,
+                discountedTotal: productDiscountedTotal,
+                thumbnail: p.thumbnail || ""
+            };
+        });
+
         const nuevoCart = new Cart({
             id: nextId,
             userId: userId,
             date: new Date(),
-            products: products.map(p => ({
-                productId: p.productId,
-                quantity: p.quantity
-            }))
+            products: productsData,
+            total: cartTotal,
+            discountedTotal: cartDiscountedTotal,
+            totalProducts: productsData.length,
+            totalQuantity: cartTotalQuantity
         });
 
         // =========================
