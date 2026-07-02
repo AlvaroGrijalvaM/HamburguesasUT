@@ -1,0 +1,390 @@
+[{
+  "_id": {
+    "$oid": "6a419614cb70d3f5ea3794db"
+  },
+  "name": "Hamburguesa Clásica",
+  "price": 85,
+  "category": "comida",
+  "subcategory": "hamburgers",
+  "description": "Carne, queso, lechuga y tomate",
+  "image": "images/comida/1.jpg",
+  "stock": 25,
+  "rating": [
+    {
+      "userId": "u1",
+      "value": 5
+    },
+    {
+      "userId": "u2",
+      "value": 4
+    },
+    {
+      "userId": "u3",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419614cb70d3f5ea3794dc"
+  },
+  "name": "Hamburguesa Doble Queso",
+  "price": 110,
+  "category": "comida",
+  "subcategory": "hamburgers",
+  "description": "Doble carne y doble queso",
+  "image": "images/comida/2.jpg",
+  "stock": 18,
+  "rating": [
+    {
+      "userId": "u2",
+      "value": 5
+    },
+    {
+      "userId": "u4",
+      "value": 4
+    },
+    {
+      "userId": "u5",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419614cb70d3f5ea3794dd"
+  },
+  "name": "Hamburguesa BBQ",
+  "price": 120,
+  "category": "comida",
+  "subcategory": "hamburgers",
+  "description": "Salsa BBQ, tocino y carne",
+  "image": "images/comida/3.jpeg",
+  "stock": 0,
+  "rating": [
+    {
+      "userId": "u1",
+      "value": 4
+    },
+    {
+      "userId": "u6",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419614cb70d3f5ea3794de"
+  },
+  "name": "Hamburguesa Picante",
+  "price": 95,
+  "category": "comida",
+  "subcategory": "hamburgers",
+  "description": "Salsa picante y jalapeños",
+  "image": "images/comida/4.png",
+  "stock": 20,
+  "rating": [
+    {
+      "userId": "u3",
+      "value": 4
+    },
+    {
+      "userId": "u5",
+      "value": 3
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419614cb70d3f5ea3794df"
+  },
+  "name": "Hamburguesa Chicken",
+  "price": 90,
+  "category": "comida",
+  "subcategory": "hamburgers",
+  "description": "Pechuga empanizada, tomate y lechuga",
+  "image": "images/comida/5.png",
+  "stock": 22,
+  "rating": [
+    {
+      "userId": "u2",
+      "value": 4
+    },
+    {
+      "userId": "u6",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419614cb70d3f5ea3794e0"
+  },
+  "name": "Hamburguesa Veggie",
+  "price": 80,
+  "category": "comida",
+  "subcategory": "hamburgers",
+  "description": "Hecha de avena, soja, lentejas, alubias, quinoa, lechuga, aguacate y tomate",
+  "image": "images/comida/6.png",
+  "stock": 10,
+  "rating": [
+    {
+      "userId": "u4",
+      "value": 4
+    },
+    {
+      "userId": "u1",
+      "value": 3
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419624cb70d3f5ea3794e2"
+  },
+  "name": "Coca Cola",
+  "price": 25,
+  "category": "bebidas",
+  "subcategory": "sodas",
+  "image": "images/bebidas/1.png",
+  "stock": 50,
+  "rating": [
+    {
+      "userId": "u1",
+      "value": 5
+    },
+    {
+      "userId": "u2",
+      "value": 5
+    },
+    {
+      "userId": "u3",
+      "value": 4
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419624cb70d3f5ea3794e3"
+  },
+  "name": "Pepsi",
+  "price": 25,
+  "category": "bebidas",
+  "subcategory": "sodas",
+  "image": "images/bebidas/2.png",
+  "stock": 45,
+  "rating": [
+    {
+      "userId": "u4",
+      "value": 4
+    },
+    {
+      "userId": "u5",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419624cb70d3f5ea3794e4"
+  },
+  "name": "Agua Natural",
+  "price": 15,
+  "category": "bebidas",
+  "subcategory": "water",
+  "image": "images/bebidas/3.png",
+  "stock": 60,
+  "rating": [
+    {
+      "userId": "u6",
+      "value": 5
+    },
+    {
+      "userId": "u2",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419624cb70d3f5ea3794e5"
+  },
+  "name": "Limonada",
+  "price": 30,
+  "category": "bebidas",
+  "subcategory": "natural",
+  "image": "images/bebidas/4.png",
+  "stock": 30,
+  "rating": [
+    {
+      "userId": "u1",
+      "value": 4
+    },
+    {
+      "userId": "u3",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419624cb70d3f5ea3794e6"
+  },
+  "name": "Té Helado",
+  "price": 28,
+  "category": "bebidas",
+  "subcategory": "tea",
+  "image": "images/bebidas/5.png",
+  "stock": 25,
+  "rating": [
+    {
+      "userId": "u4",
+      "value": 4
+    },
+    {
+      "userId": "u5",
+      "value": 4
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a419624cb70d3f5ea3794e7"
+  },
+  "name": "Malteada Vainilla",
+  "price": 60,
+  "category": "bebidas",
+  "subcategory": "milkshake",
+  "image": "images/bebidas/6.png",
+  "stock": 20,
+  "rating": [
+    {
+      "userId": "u6",
+      "value": 5
+    },
+    {
+      "userId": "u1",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a41962bcb70d3f5ea3794e9"
+  },
+  "name": "Helado Vainilla",
+  "price": 35,
+  "category": "postres",
+  "image": "images/postres/1.png",
+  "stock": 30,
+  "rating": [
+    {
+      "userId": "u1",
+      "value": 4
+    },
+    {
+      "userId": "u2",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a41962bcb70d3f5ea3794ea"
+  },
+  "name": "Helado Chocolate",
+  "price": 35,
+  "category": "postres",
+  "image": "images/postres/2.png",
+  "stock": 28,
+  "rating": [
+    {
+      "userId": "u3",
+      "value": 5
+    },
+    {
+      "userId": "u4",
+      "value": 4
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a41962bcb70d3f5ea3794eb"
+  },
+  "name": "Pastel de Chocolate",
+  "price": 50,
+  "category": "postres",
+  "image": "images/postres/3.png",
+  "stock": 15,
+  "rating": [
+    {
+      "userId": "u5",
+      "value": 5
+    },
+    {
+      "userId": "u6",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a41962bcb70d3f5ea3794ec"
+  },
+  "name": "Brownie",
+  "price": 40,
+  "category": "postres",
+  "image": "images/postres/4.png",
+  "stock": 18,
+  "rating": [
+    {
+      "userId": "u2",
+      "value": 4
+    },
+    {
+      "userId": "u3",
+      "value": 4
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a41962bcb70d3f5ea3794ed"
+  },
+  "name": "Pay de Queso",
+  "price": 55,
+  "category": "postres",
+  "image": "images/postres/5.png",
+  "stock": 12,
+  "rating": [
+    {
+      "userId": "u1",
+      "value": 5
+    },
+    {
+      "userId": "u4",
+      "value": 5
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a41962bcb70d3f5ea3794ee"
+  },
+  "name": "Galleta adornada",
+  "price": 40,
+  "category": "postres",
+  "image": "images/postres/6.png",
+  "stock": 40,
+  "rating": [
+    {
+      "userId": "u5",
+      "value": 4
+    },
+    {
+      "userId": "u6",
+      "value": 3
+    }
+  ]
+}]
