@@ -18,7 +18,7 @@ const cartSchema = new schema({
     products: [
         {
             id: {
-                type: Number,
+                type: String,
                 required: true
             },
             name: {
